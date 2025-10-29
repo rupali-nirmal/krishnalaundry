@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Laundry & Dry Cleaners</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h2>Krishna Laundry & Dry Cleaners</h2>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <div class="hero-text">
+      <h3>Trusted Dry Cleaning & Saree Care</h3>
+      <p>
+        Saree Polish, Saree Dry cleaning, Blaser Dry clean, Blanket Dry clean,
+        Colors in Cloths, Lancha Dry cleaning, Ironing, Washing — pickup & delivery available.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/9131842188" class="btn whatsapp">💬 Book on WhatsApp</a>
+        <a href="tel:9131842188" class="btn call">📞 Call / Contact</a>
+      </div>
+    </div>
+
+    <div class="card booking">
+      <h3>Quick Booking</h3>
+      <form id="bookingForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="tel" id="phone" placeholder="Phone Number" required />
+
+        <p class="service-heading">Select Services:</p>
+        <div class="services-checkboxes">
+          <label><input type="checkbox" name="services" value="Saree Polish"> Saree Polish</label>
+          <label><input type="checkbox" name="services" value="Saree Dry cleaning"> Saree Dry cleaning</label>
+          <label><input type="checkbox" name="services" value="Blaser Dry clean"> Blaser Dry clean</label>
+          <label><input type="checkbox" name="services" value="Blanket Dry clean"> Blanket Dry clean</label>
+          <label><input type="checkbox" name="services" value="Colors in Cloths"> Colors in Cloths</label>
+          <label><input type="checkbox" name="services" value="Lancha Dry cleaning"> Lancha Dry cleaning</label>
+          <label><input type="checkbox" name="services" value="Ironing"> Ironing</label>
+          <label><input type="checkbox" name="services" value="Washing"> Washing</label>
+        </div>
+
+        <textarea id="notes" rows="3" placeholder="Pickup address or notes"></textarea>
+        <button type="submit" class="btn send">Send Booking</button>
+      </form>
+
+      <!-- ✅ Hidden Thank You Section (INSIDE the card now) -->
+      <div id="thankYou" class="thankyou hidden">
+        <h3>✅ Thank you for your booking!</h3>
+        <p>We’ve received your request. Here’s what you submitted:</p>
+        <div id="summary"></div>
+        <button class="btn" id="backBtn">← Back to Booking</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Krishna Laundry & Dry Cleaners | Housing Board, Bhilai | 9131842188
+  </footer>
+
+  <!-- ✅ Link JS at bottom -->
+  <script src="script.js"></script>
+</body>
+</html>
